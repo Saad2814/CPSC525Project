@@ -1,0 +1,165 @@
+/* Styles Page */
+body {
+    /* Fonts */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Light colored background */
+    background-color: #f2f4f7; 
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card style main box with centering  */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Header Color */
+h1, h2, h3 {
+    color: #1b5e20;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #27ae60; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1f8f4a; 
+}
+
+/* Button Styling */
+button, .btn {
+    background-color: #27ae60; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+/* Darker green when hovering over button */
+button:hover, .btn:hover {
+    background-color: #1f8f4a;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    padding: 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background-color: #f9fafb;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #1b5e20; /* label green */
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=date],
+input[type=time],
+select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* Table cell spacing and color */
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+/* table headers styling */
+thead {
+    background-color: #27ae60; 
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+/* Style messages */
+.message-box p,
+.message {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #e8f5e9; 
+    border-left: 4px solid #27ae60;
+    border-radius: 4px;
+    color: #1a1a1a;
+}
+
+/* Navbar*/
+.navbar {
+    display: flex;
+    background-color: #27ae60; 
+    color: #fff;
+    padding: 14px 24px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: #fff;
+    margin-right: 16px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 22px;
+    color: #1b5e20; 
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    margin-left: 12px;
+}
