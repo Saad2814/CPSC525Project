@@ -12,7 +12,7 @@ Final project for CPSC 525, showcasing CWE 89 - Improper Neutralization of Speci
 DESCRIPTION:
 This project is a financial literacy website that lets users book appointments with advisors, purchase courses and sign up for newsletters
 On each page, there is a vulnerability that can be exploited using an SQL injection attack
-Our code has vulnerabilities which can be exploited by just typing in commands, thus we did not need a exploit script
+Our code has vulnerabilities which can be exploited by just typing in commands, thus we did not need an exploit script
 The languages used were PHP and SQL for interacting with the sqlite database as well as HTML and CSS for styling
 
 
@@ -39,15 +39,16 @@ SQL Injection Commands:
     Login page - password field (index.php) - Allows the attacker to login by only knowing a valid username and without knowing the correct password:
     ' OR 1=1--
 
-    Unsubscribe page - username field (unsubscribe.php) - Removes all users from the newletter and mailing list:
+    Unsubscribe page - username field (unsubscribe.php) - Removes all users from the newsletter and mailing list:
     ' OR 1=1--
 
-    Transactions page - ccnum field (transactions.php) - Displays the credit card information of all users who have made transcations:
+    Transactions page - ccnum field (transactions.php) - Displays the credit card information of all users who have made transactions:
     '|| (SELECT group_concat(course || ' - ' || ccnum || ' - ' || cvv || ' - ' || expDate, '; ') FROM transactions) ||'
 
     Appointments page - notes field (appt_selection.php) - Displays the private info of a specified advisor:
     NOTE: change advisor@example.com to an actual advisor email shown on the page
     '|| (SELECT phonenumber || ' - ' || address FROM advisor WHERE email = 'advisor@example.com') ||'
+
 
 
 
