@@ -17,10 +17,15 @@ The languages used were PHP and SQL for interacting with the sqlite database as 
 
 
 HOW TO COMPILE/RUN THE CODE:
-To start the program navigate to the directory containing the program files
-Then to start the program enter: php -S 127.0.0.1:8000  
-And CTRL + click the link that appears in the terminal which will open the local hosted website  
+- Using command line SSH into the cslinux servers using this line: ssh -L 8000:127.0.0.1:8000 your_email@cslinux.ucalgary.ca
+- git clone https://github.com/Saad2814/CPSC525Project
+- Navigate to the directory containing the program files
+- Run the program with this line: php -S 127.0.0.1:8000  
+- CTRL + click the link that appears in the terminal, which will open the locally hosted website  
+NOTE: If you are using VSCode Remote-SSH, you can skip the first step
 
+
+USERS:
 Two example login users (you can create your own too using the sign up on the login page):
 user: alice99
 password: password123
@@ -43,5 +48,6 @@ SQL Injection Commands:
     Appointments page - notes field (appt_selection.php) - Displays the private info of a specified advisor:
     NOTE: change advisor@example.com to an actual advisor email shown on the page
     '|| (SELECT phonenumber || ' - ' || address FROM advisor WHERE email = 'advisor@example.com') ||'
+
 
 
